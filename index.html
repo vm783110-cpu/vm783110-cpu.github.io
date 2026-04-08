@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Day Trader – Official</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>trade with gupta</title>
 
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,172 +15,194 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '784425168066519');
+fbq('init', '1125664466061716');
 fbq('track', 'PageView');
 </script>
+
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=784425168066519&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=1125664466061716&ev=PageView&noscript=1"/>
 </noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
 body{
-min-height:100vh;display:flex;justify-content:center;align-items:center;
-padding:18px;color:#fff;background:#0b0f14;overflow-x:hidden;
+font-family:Arial;
+background:#0b0f19;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 }
-body::before{
-content:"";position:fixed;inset:0;
-background:
-radial-gradient(circle at 20% 20%, rgba(0,140,255,0.12), transparent 40%),
-radial-gradient(circle at 80% 30%, rgba(0,255,180,0.10), transparent 45%),
-radial-gradient(circle at 50% 80%, rgba(255,200,0,0.10), transparent 40%),
-linear-gradient(135deg, rgba(255,255,255,0.05) 1px, transparent 1px),
-linear-gradient(45deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-background-size:auto,auto,auto,40px 40px,40px 40px;
-opacity:.9;z-index:-2;
+
+.container{
+width:380px;
+background:#111827;
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.7);
 }
-.card{
-width:100%;max-width:420px;background:rgba(20,20,20,.88);
-border:1px solid rgba(255,255,255,.12);border-radius:22px;
-padding:22px 18px 18px;box-shadow:0 10px 40px rgba(0,0,0,.55);
-backdrop-filter:blur(12px);text-align:center;
+
+.logo{
+width:120px;
+height:120px;
+border-radius:100px;
+object-fit:cover;
+margin-bottom:15px;
+animation:float 3s ease-in-out infinite;
 }
-.avatarWrap{
-width:120px;height:120px;margin:0 auto 14px;border-radius:50%;
-padding:4px;background:linear-gradient(135deg,#ffcc00,#ff9900);
-display:flex;align-items:center;justify-content:center;
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
 }
-.avatar{
-width:100%;height:100%;border-radius:50%;object-fit:cover;
-border:2px solid rgba(0,0,0,.6);background:#111;
+
+h1{
+font-size:28px;
+margin-bottom:5px;
 }
-.title{
-font-size:36px;font-weight:800;color:#ffcc00;line-height:1.05;margin-top:6px;
-text-shadow:0 2px 12px rgba(0,0,0,.6);
+
+.badge{
+background:linear-gradient(45deg,#ff512f,#ff9966);
+padding:10px 20px;
+border-radius:30px;
+display:inline-block;
+margin:15px 0;
+font-weight:bold;
 }
-.subtitle{
-margin:10px auto 14px;display:flex;align-items:center;justify-content:center;
-gap:10px;font-size:15px;opacity:.92;
+
+.telegram-btn{
+display:block;
+margin:20px 0;
+padding:18px;
+border-radius:50px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+color:white;
+font-weight:bold;
+font-size:18px;
+text-decoration:none;
+animation:blink 1.2s infinite;
 }
-.pills{
-display:flex;justify-content:center;gap:12px;margin:8px 0 14px;flex-wrap:wrap;
+
+.telegram-btn img{
+width:22px;
+vertical-align:middle;
+margin-right:8px;
 }
-.pill{
-background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
-padding:10px 14px;border-radius:14px;font-weight:700;font-size:15px;min-width:140px;
+
+@keyframes blink{
+0%{opacity:1;box-shadow:0 0 10px #00c6ff;}
+50%{opacity:0.7;box-shadow:0 0 25px #00c6ff;}
+100%{opacity:1;box-shadow:0 0 10px #00c6ff;}
 }
-.timerBox{
-margin:12px 0 16px;padding:12px 14px;border-radius:16px;
-background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);
-font-size:15px;font-weight:700;line-height:1.4;
+
+.text{
+margin-top:15px;
+line-height:1.6;
+font-size:16px;
 }
-.timerBox span{color:#00d1ff;font-weight:900;font-size:18px;}
-.tgBtn{width:100%;display:flex;justify-content:center;margin:10px 0 18px;}
-.tgBtn button{
-width:100%;border:none;cursor:pointer;padding:16px 16px;border-radius:16px;
-font-size:20px;font-weight:900;color:#fff;background:#2AABEE;
-display:flex;align-items:center;justify-content:center;gap:10px;
-animation: hardBlink .55s infinite alternate, pulseGlow .8s infinite;
+
+.highlight{
+color:#ff6b6b;
+font-weight:bold;
 }
-.tgBtn button:active{transform:scale(.98);}
-.tgIcon{width:26px;height:26px;display:inline-block;}
-@keyframes hardBlink{0%{filter:brightness(1);opacity:1;}100%{filter:brightness(1.7);opacity:.7;}}
-@keyframes pulseGlow{0%{box-shadow:0 0 0 rgba(42,171,238,0);}50%{box-shadow:0 0 28px rgba(42,171,238,.65);}100%{box-shadow:0 0 0 rgba(42,171,238,0);}}
-.features{margin-top:10px;display:flex;flex-direction:column;gap:14px;}
-.feature{
-display:flex;align-items:center;gap:12px;padding:16px 14px;border-radius:16px;
-background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);
-font-size:16px;font-weight:700;text-align:left;
+
+.profit{
+color:#ffd700;
+font-size:20px;
+margin:15px 0;
+font-weight:bold;
 }
-.ok{
-width:26px;height:26px;border-radius:50%;background:#00ff99;color:#001b10;
-display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px;
-flex-shrink:0;box-shadow:0 0 18px rgba(0,255,153,.35);
+
+.features{
+margin-top:15px;
+text-align:left;
+line-height:2;
+font-size:15px;
 }
-.note{margin-top:12px;font-size:13px;opacity:.75;}
-.footerText{margin-top:16px;font-size:12px;opacity:.7;line-height:1.4;}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#9ca3af;
+}
+
+.dm-link{
+margin-top:15px;
+display:block;
+color:#00c6ff;
+font-weight:bold;
+text-decoration:none;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="card">
-  <div class="avatarWrap">
-    <img class="avatar" src="profile.jpg" alt="Munaf Learning">
-  </div>
+<div class="container">
 
-  <div class="title">Day<br>Trader™️</div>
+<img src="logo.png" class="logo">
 
-  <div class="subtitle">
-    <span>✅</span>
-    <span>వేల మంది లెర్నర్స్ నమ్ముతున్న కమ్యూనిటీ</span>
-  </div>
+<h1>Trade with gupta</h1>
+<div>💸🏆</div>
 
-  <div class="pills">
-    <div class="pill">24/7 లెర్నింగ్ అప్డేట్స్</div>
-    <div class="pill">ఉచితంగా చేరండి</div>
-  </div>
+<div class="badge">📊 17 Years Trading Experience</div>
 
-  <div class="timerBox">
-    <span id="timer">10</span> సెకండ్లలో టెలిగ్రామ్ తెరుచుకుంటుంది...<br>
-    ఓపెన్ కాకపోతే కింద బటన్ క్లిక్ చేయండి 👇
-  </div>
+<div>👇👇👇</div>
 
-  <div class="tgBtn">
-    <button id="joinBtn" type="button">
-      <svg class="tgIcon" viewBox="0 0 240 240">
-        <circle cx="120" cy="120" r="120" fill="white" opacity="0.15"/>
-        <path d="M200.5 63.4 171.8 196c-2.2 9.4-8.2 11.7-16.6 7.3l-46-33.9-22.2 21.4c-2.5 2.5-4.6 4.6-9.4 4.6l3.4-48.6 88.5-79.9c3.9-3.4-.9-5.3-6-1.9l-109.4 68.9-47.1-14.7c-10.2-3.2-10.4-10.2 2.1-15.1l184.1-71c8.5-3.1 15.9 2.1 13.1 15.3z" fill="white"/>
-      </svg>
-      టెలిగ్రామ్‌లో చేరండి
-    </button>
-  </div>
+<a class="telegram-btn" href="https://t.me/+TUBWTL9nc6M1NmJl">
 
-  <div class="features">
-    <div class="feature"><div class="ok">✓</div><div>మార్కెట్ అవగాహన & లెర్నింగ్ చర్చలు</div></div>
-    <div class="feature"><div class="ok">✓</div><div>అనుభవజ్ఞుల నుంచి నేర్చుకోండి</div></div>
-    <div class="feature"><div class="ok">✓</div><div>ప్రాక్టికల్ లెర్నింగ్ స్ట్రాటజీలు</div></div>
-  </div>
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
 
-  <div class="note">⚠️ గమనిక: నిజంగా నేర్చుకోవాలనుకునే వారు మాత్రమే జాయిన్ అవ్వండి.</div>
-  <div class="footerText">ఈ ఛానల్ పూర్తిగా విద్యా (Educational) ఉద్దేశ్యాల కోసం మాత్రమే.</div>
+JOIN TELEGRAM CHANNEL
 
-  <div style="margin-top:15px;font-size:14px;">
-    👉 Meta Ads Setup ke liye DM karo  
-    <br>
-    <a href="https://t.me/+jE7sEbzR23gwM2U1" target="_blank" onclick="fbq('track','Lead')" style="color:#00d1ff;font-weight:bold;text-decoration:underline;">
-      Click Here to Message
-    </a>
-  </div>
+</a>
+
+<div class="text">
+
+Do you want to make money from trading?<br><br>
+
+<span class="highlight">
+If yes, then click on the Telegram button above 🚀
+</span>
+
 </div>
 
-<script>
-const TG_LINK = "https://t.me/+A1lKatcGnTtkYWI9";
+<div class="profit">
+💎 DAILY PROFIT GUARANTEE 💎
+</div>
 
-function openTelegramWithLead(){
-  try {
-    if(typeof fbq === "function"){
-      fbq('track','Lead');
-    }
-  } catch(e) {}
-  window.location.href = TG_LINK;
-}
+<div class="features">
 
-const joinBtn = document.getElementById("joinBtn");
-joinBtn.addEventListener("click", openTelegramWithLead);
+📊 Live Daily Trades directly from my portfolio<br>
+🔥 Exclusive Signals used by professionals<br>
+💯 High Accuracy with proven consistency<br>
+⚡ Instant Updates with real-time alerts
 
-let timeLeft = 10;
-const timerEl = document.getElementById("timer");
+</div>
 
-const interval = setInterval(() => {
-  timeLeft--;
-  timerEl.textContent = timeLeft;
-  if(timeLeft <= 0){
-    clearInterval(interval);
-    openTelegramWithLead();
-  }
-}, 1000);
-</script>
+<a class="dm-link" href="https://t.me/+x9h4Eecy_FBlYzFl">
+Meta Ads Setup ke liye DM karo
+</a>
+<a class="dm-link" href="https://t.me/+WJjLx1ytk9MxYjg1">
+Kunal Ads Agency
+</a>
+<div class="footer">
+©️ 2026 Marathi Trader Abhi - All rights reserved
+</div>
+
+</div>
 
 </body>
 </html>
